@@ -14,7 +14,9 @@ console.log( "Iniciando NodeSend" );
 
 // Habilitar CORS
 const opcionesCors = {
-  origin: process.env.FRONTEND_URL
+  origin: process.env.FRONTEND_URL,
+  credentials: true,
+  optionSucessStatus: 200
 }
 app.use( cors( opcionesCors ) );
 
