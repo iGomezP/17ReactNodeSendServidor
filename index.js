@@ -18,6 +18,7 @@ const opcionesCors = {
   credentials: true,
   optionSucessStatus: 200
 }
+console.log( process.env.FRONTEND_URL );
 app.use( cors( opcionesCors ) );
 
 // Puerto de la app
